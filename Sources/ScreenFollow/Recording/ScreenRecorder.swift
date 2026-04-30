@@ -3,6 +3,7 @@ import AVFoundation
 
 class ScreenRecorder: NSObject, ObservableObject, SCStreamDelegate, SCStreamOutput {
     @Published var isRecording = false
+    weak var delegate: ScreenRecorderDelegate?
     
     private var stream: SCStream?
     private var assetWriter: AVAssetWriter?
@@ -19,7 +20,6 @@ class ScreenRecorder: NSObject, ObservableObject, SCStreamDelegate, SCStreamOutp
         config.queueDepth = 6
         
         stream = SCStream(filter: filter, configuration: config, delegate: self)
-        
         let writer = try AVAssetWriter(url: url, fileType: .mov)
         let vs: [String: Any] = [AVVideoCodecKey: AVVideoCodecType.h264, AVVideoWidthKey: 1920, AVVideoHeightKey: 1080]
         videoInput = AVAssetWriterInput(mediaType: .video, outputSettings: vs)
@@ -31,6 +31,8 @@ class ScreenRecorder: NSObject, ObservableObject, SCStreamDelegate, SCStreamOutp
         try stream?.addStreamOutput(self, type: .screen, sampleHandlerQueue: .main)
         try await stream?.startCapture()
         isRecording = true
+        RecordingManager.shared.markRecordingStarted()
+        delegate?.recorderDidStart(self)
     }
     
     func stopRecording() async {
@@ -38,6 +40,8 @@ class ScreenRecorder: NSObject, ObservableObject, SCStreamDelegate, SCStreamOutp
         videoInput?.markAsFinished()
         await assetWriter?.finishWriting()
         isRecording = false
+        RecordingManager.shared.markRecordingStopped()
+        delegate?.recorderDidStop(self, error: nil)
     }
     
     func stream(_ stream: SCStream, didOutputSampleBuffer sampleBuffer: CMSampleBuffer, of type: SCStreamOutputType) {
