@@ -482,7 +482,7 @@ extension NSApplication {
     }
 }
 
-@main
+
 struct KlicApp: App {
     @StateObject private var inputManager = InputManager.shared
     @State private var isShowingPreferences = false
