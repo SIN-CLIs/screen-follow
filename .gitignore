@@ -1,1 +1,10 @@
 .build/
+DerivedData/
+*.xcodeproj
+xcuserdata/
+.swiftpm/
+Package.resolved
+.DS_Store
+*.lock
+*.o
+*.dylib
