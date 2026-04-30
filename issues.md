@@ -1,14 +1,18 @@
 # issues.md — screen-follow
 
-## Offen & geplant
-- **Audio-Aufnahme:** Aktuell nur Video ohne Systemton  
-- **Mehrere Displays:** Nimmt standardmäßig Hauptbildschirm auf  
-- **Langzeit-Aufnahmen (>1h):** `AVAssetWriter` braucht periodisches Segmentieren  
-- **GUI-Statusfenster:** Nur Icon, kein Preview-Fenster  
-- **EventTap-Berechtigungsprüfung:** Nur Print-Hinweis, kein Dialog  
-- **JSONL-Dateigröße:** Rotierendes Log fehlt
+## Offen
+- [ ] Audio-Aufnahme (Systemton via SCStream)
+- [ ] Multi-Display-Unterstützung
+- [ ] GUI-Vorschaufenster (Preview)
+- [ ] Langzeit-Aufnahme: Chunked Recording
+- [ ] Streaming an stealth-runner (IPC)
+- [ ] Accessibility-Permission-Dialog
 
-## Niedrige Priorität
-- Streaming des Videos an stealth-runner  
-- Eingebauter Bildvergleich  
-- Windows-kompatible Version
+## ✅ Fertig
+- [x] EventBus + SystemEventTap
+- [x] ScreenRecorder (ScreenCaptureKit + AVAssetWriter)
+- [x] JSONL Audit-Trail (elementRole + elementLabel)
+- [x] CLI (record --video, stop, status, trace --last)
+- [x] Klic-Integration (Cursor Trails, Keyboard Overlay)
+- [x] 23 MD-Dokumente
+- [x] CI + Release-Workflow
