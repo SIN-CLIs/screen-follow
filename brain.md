@@ -1,20 +1,22 @@
-# brain.md — screen-follow
-> **Stealth Quad Verify Layer.** Zeichnet Maus, Tastatur, Klicks (mit Element-Label), Scrollen auf.
-> JSONL Audit: `/tmp/screen-follow-audit.jsonl`. Video: `record --video`.
+# brain.md — screen-follow v0.2.1
 
+> **Stealth Quad Verify Layer** — Video + JSONL Audit + Element-Label-Logging
 
-## Wissensbasis
-`screen-follow` trifft keine autonomen Entscheidungen, sondern zeichnet auf. Die darin steckende Intelligenz liegt in der Interpretation:
+## Architektur
+- **EventBus** (Combine) — zentraler Publisher
+- **SystemEventTap** — EIN CGEventTap für Maus + Tastatur + Scroll
+- **ScreenRecorder** — ScreenCaptureKit + AVAssetWriter
+- **EventAuditLogger** — JSONL mit elementRole + elementLabel via AXUIElementCopyElementAtPosition
+- **Klic-basiert** — Cursor Trails, Keyboard Overlay, Mouse Effects (MIT)
 
-- **Entscheidungsgrundlage:** Der Audit-Trail enthält jeden Klick und Tastendruck  
-- **QS-Regeln (extern):** stealth-runner kann den JSONL-Trail parsen  
-- **Wiederholbare Tests:** Gleiche Eingabe → gleiche Aufnahme
+## CLI
+```
+screen-follow              → GUI (Live-Overlays + Audit)
+screen-follow record --video → Video + JSONL
+screen-follow status        → Recording-Status
+screen-follow trace --last 50 → Audit-Events
+screen-follow stop          → Aufnahme beenden
+```
 
-## Logik der Aufzeichnung
-1. Jedes Event wird **sofort** in die JSONL-Datei geschrieben (kein Buffer)  
-2. Video und Trail sind über Zeitstempel synchronisierbar  
-3. Overlays im Video sind **immer** Teil der Aufnahme (vom System als Teil des Bildschirms erfasst)
-
-## Warum kein „intelligenter" Detektor?
-Bewusst einfach gehalten – `screen-follow` ist ein passiver Datenlieferant.  
-Die Analyse überlassen wir spezialisierten Komponenten.
+## Integration in stealth-runner
+`learn_from_session()` in `stealth-runner/src/stealth_runner/learn.py` liest den Audit-Log und generiert Skills.
