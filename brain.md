@@ -1,4 +1,7 @@
 # brain.md — screen-follow
+> **Stealth Quad Verify Layer.** Zeichnet Maus, Tastatur, Klicks (mit Element-Label), Scrollen auf.
+> JSONL Audit: `/tmp/screen-follow-audit.jsonl`. Video: `record --video`.
+
 
 ## Wissensbasis
 `screen-follow` trifft keine autonomen Entscheidungen, sondern zeichnet auf. Die darin steckende Intelligenz liegt in der Interpretation:
