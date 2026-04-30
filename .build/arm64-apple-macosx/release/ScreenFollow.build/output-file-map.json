@@ -1,0 +1,31 @@
+{
+  "": {
+    "dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/ScreenFollow.d",
+    "object": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/ScreenFollow.o",
+    "swift-dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/master.swiftdeps"
+  },
+  "/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/AppDelegate.swift": {
+    "object": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/AppDelegate.dia"
+  },
+  "/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/HighlightView.swift": {
+    "object": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/HighlightView.swift.o",
+    "swiftmodule": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/HighlightView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/HighlightView.swiftdeps",
+    "diagnostics": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/HighlightView.dia"
+  },
+  "/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/OverlayWindowController.swift": {
+    "object": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/OverlayWindowController.swift.o",
+    "swiftmodule": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/OverlayWindowController~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/OverlayWindowController.swiftdeps",
+    "diagnostics": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/OverlayWindowController.dia"
+  },
+  "/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/main.swift": {
+    "object": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/main.swift.o",
+    "swiftmodule": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/main.swiftdeps",
+    "diagnostics": "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/release/ScreenFollow.build/main.dia"
+  }
+}

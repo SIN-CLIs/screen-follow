@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "ScreenFollow-arm64-apple-macosx26.0-debug.module": ["<ScreenFollow-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<ScreenFollow-arm64-apple-macosx26.0-debug.module>","<screen-follow-arm64-apple-macosx26.0-debug.exe>"]
+  "screen-follow-arm64-apple-macosx26.0-debug.exe": ["<screen-follow-arm64-apple-macosx26.0-debug.exe>"]
+  "test": ["<ScreenFollow-arm64-apple-macosx26.0-debug.module>","<screen-follow-arm64-apple-macosx26.0-debug.exe>"]
+default: "main"
+nodes:
+  "/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow":
+    is-mutated: true
+commands:
+  "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/AppDelegate.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/HighlightView.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/OverlayWindowController.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/main.swift"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/sources"]
+    description: "Write auxiliary file /Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/sources"
+
+  "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow-entitlement.plist"]
+    description: "Write auxiliary file /Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow-entitlement.plist"
+
+  "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/AppDelegate.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/HighlightView.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/OverlayWindowController.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/main.swift.o"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow.product/Objects.LinkFileList"
+
+  "/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<ScreenFollow-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/AppDelegate.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/HighlightView.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/OverlayWindowController.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/main.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/Modules/ScreenFollow.swiftmodule"]
+    outputs: ["<ScreenFollow-arm64-apple-macosx26.0-debug.module>"]
+
+  "<screen-follow-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<screen-follow-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<screen-follow-arm64-apple-macosx26.0-debug.exe>"]
+
+  "C.ScreenFollow-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/AppDelegate.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/HighlightView.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/OverlayWindowController.swift","/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/main.swift","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/sources"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/AppDelegate.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/HighlightView.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/OverlayWindowController.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/main.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/Modules/ScreenFollow.swiftmodule"]
+    description: "Compiling Swift Module 'ScreenFollow' (4 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","ScreenFollow","-emit-dependencies","-emit-module","-emit-module-path","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/Modules/ScreenFollow.swiftmodule","-output-file-map","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/output-file-map.json","-incremental","-c","@/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/sources","-I","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","ScreenFollow_main","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","screen_follow"]
+
+  "C.screen-follow-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/AppDelegate.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/HighlightView.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/OverlayWindowController.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/ScreenFollow.build/main.swift.o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow.product/Objects.LinkFileList"]
+    outputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/screen-follow"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug","-o","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow","-module-name","screen_follow","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_ScreenFollow_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/Modules/ScreenFollow.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.screen-follow-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow-entitlement.plist"]
+    outputs: ["<screen-follow-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/screen-follow"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow-entitlement.plist","/Users/jeremy/dev/screen-follow/.build/arm64-apple-macosx/debug/screen-follow"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/jeremy/dev/screen-follow/Sources/ScreenFollow/","/Users/jeremy/dev/screen-follow/Package.swift","/Users/jeremy/dev/screen-follow/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
