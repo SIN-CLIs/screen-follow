@@ -11,6 +11,8 @@ struct AuditEvent: Codable {
     var characters: String?
     var deltaX: Int?
     var deltaY: Int?
+    var elementRole: String?
+    var elementLabel: String?
 }
 
 class EventAuditLogger: ObservableObject {
@@ -49,10 +51,12 @@ class EventAuditLogger: ObservableObject {
     }
     
     private func log(event: FollowEvent) {
-        var entry = AuditEvent(ts: Date().timeIntervalSince1970, type: event.auditType, x: nil, y: nil, button: nil, keyCode: nil, characters: nil, deltaX: nil, deltaY: nil)
+        var entry = AuditEvent(ts: Date().timeIntervalSince1970, type: event.auditType)
         switch event {
         case .mouseMoved(let x, let y): entry.x = x; entry.y = y
-        case .mouseDown(let btn, let x, let y): entry.button = btn; entry.x = x; entry.y = y
+        case .mouseDown(let btn, let x, let y, let el):
+            entry.button = btn; entry.x = x; entry.y = y
+            entry.elementRole = el?.role; entry.elementLabel = el?.label
         case .mouseUp(let btn, let x, let y): entry.button = btn; entry.x = x; entry.y = y
         case .keyDown(let kc, let chars): entry.keyCode = Int(kc); entry.characters = chars
         case .keyUp(let kc): entry.keyCode = Int(kc)

@@ -1,4 +1,5 @@
 import CoreGraphics
+import ApplicationServices
 
 final class SystemEventTap {
     static let shared = SystemEventTap()
@@ -41,12 +42,29 @@ final class SystemEventTap {
         eventTap = nil; runLoopSource = nil; isRunning = false
     }
     
+    private func elementAt(point: CGPoint) -> ElementInfo? {
+        var element: AXUIElement?
+        let result = AXUIElementCopyElementAtPosition(AXUIElementCreateSystemWide(), Float(point.x), Float(point.y), &element)
+        guard result == .success, let el = element else { return nil }
+        var roleRef: CFTypeRef?, labelRef: CFTypeRef?
+        AXUIElementCopyAttributeValue(el, kAXRoleAttribute as CFString, &roleRef)
+        AXUIElementCopyAttributeValue(el, kAXDescriptionAttribute as CFString, &labelRef)
+        if labelRef == nil { AXUIElementCopyAttributeValue(el, kAXTitleAttribute as CFString, &labelRef) }
+        let role = (roleRef as? String) ?? "unknown"
+        let label = (labelRef as? String) ?? ""
+        return ElementInfo(role: role, label: label, path: "")
+    }
+    
     private func handle(type: CGEventType, event: CGEvent) {
         let loc = event.location
         switch type {
         case .mouseMoved: EventBus.shared.post(.mouseMoved(x: loc.x, y: loc.y))
-        case .leftMouseDown: EventBus.shared.post(.mouseDown(button: 0, x: loc.x, y: loc.y))
-        case .rightMouseDown: EventBus.shared.post(.mouseDown(button: 1, x: loc.x, y: loc.y))
+        case .leftMouseDown:
+            let el = elementAt(point: loc)
+            EventBus.shared.post(.mouseDown(button: 0, x: loc.x, y: loc.y, element: el))
+        case .rightMouseDown:
+            let el = elementAt(point: loc)
+            EventBus.shared.post(.mouseDown(button: 1, x: loc.x, y: loc.y, element: el))
         case .leftMouseUp: EventBus.shared.post(.mouseUp(button: 0, x: loc.x, y: loc.y))
         case .rightMouseUp: EventBus.shared.post(.mouseUp(button: 1, x: loc.x, y: loc.y))
         case .keyDown:

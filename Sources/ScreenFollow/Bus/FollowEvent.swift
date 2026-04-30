@@ -1,8 +1,14 @@
 import Foundation
 
+struct ElementInfo {
+    let role: String
+    let label: String
+    let path: String
+}
+
 enum FollowEvent {
     case mouseMoved(x: Double, y: Double)
-    case mouseDown(button: Int, x: Double, y: Double)
+    case mouseDown(button: Int, x: Double, y: Double, element: ElementInfo?)
     case mouseUp(button: Int, x: Double, y: Double)
     case keyDown(keyCode: UInt16, characters: String)
     case keyUp(keyCode: UInt16)
