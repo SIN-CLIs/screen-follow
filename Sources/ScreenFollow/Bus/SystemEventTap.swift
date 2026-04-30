@@ -1,33 +1,4 @@
-import Foundation
-import Combine
 import CoreGraphics
-
-enum FollowEvent {
-    case mouseMoved(x: Double, y: Double)
-    case mouseDown(button: Int, x: Double, y: Double)
-    case mouseUp(button: Int, x: Double, y: Double)
-    case keyDown(keyCode: UInt16, characters: String)
-    case keyUp(keyCode: UInt16)
-    case scroll(deltaX: Int, deltaY: Int)
-    
-    var auditType: String {
-        switch self {
-        case .mouseMoved: return "mouse_moved"
-        case .mouseDown: return "mouse_down"
-        case .mouseUp: return "mouse_up"
-        case .keyDown: return "key_down"
-        case .keyUp: return "key_up"
-        case .scroll: return "scroll"
-        }
-    }
-}
-
-final class EventBus {
-    static let shared = EventBus()
-    private let subject = PassthroughSubject<FollowEvent, Never>()
-    var publisher: AnyPublisher<FollowEvent, Never> { subject.eraseToAnyPublisher() }
-    func post(_ event: FollowEvent) { subject.send(event) }
-}
 
 final class SystemEventTap {
     static let shared = SystemEventTap()
@@ -47,15 +18,14 @@ final class SystemEventTap {
                       | (1 << CGEventType.scrollWheel.rawValue)
         
         let selfPtr = Unmanaged.passUnretained(self).toOpaque()
-        guard let tap = CGEvent.tapCreate(
-            tap: .cgSessionEventTap, place: .headInsertEventTap,
+        guard let tap = CGEvent.tapCreate(tap: .cgSessionEventTap, place: .headInsertEventTap,
             options: .defaultTap, eventsOfInterest: CGEventMask(eventMask),
             callback: { (_, type, event, refcon) -> Unmanaged<CGEvent>? in
                 let mySelf = Unmanaged<SystemEventTap>.fromOpaque(refcon!).takeUnretainedValue()
                 mySelf.handle(type: type, event: event)
                 return Unmanaged.passRetained(event)
-            }, userInfo: selfPtr
-        ) else { print("⚠️  EventTap failed — Accessibility permission?"); return }
+            }, userInfo: selfPtr)
+        else { print("⚠️  EventTap failed — Accessibility?"); return }
         
         eventTap = tap
         runLoopSource = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, tap, 0)
@@ -84,8 +54,7 @@ final class SystemEventTap {
             var chars = [UniChar](repeating: 0, count: 4)
             var len = 0
             event.keyboardGetUnicodeString(maxStringLength: 4, actualStringLength: &len, unicodeString: &chars)
-            let str = String(utf16CodeUnits: chars, count: len)
-            EventBus.shared.post(.keyDown(keyCode: kc, characters: str))
+            EventBus.shared.post(.keyDown(keyCode: kc, characters: String(utf16CodeUnits: chars, count: len)))
         case .keyUp:
             EventBus.shared.post(.keyUp(keyCode: UInt16(event.getIntegerValueField(.keyboardEventKeycode))))
         case .scrollWheel:
