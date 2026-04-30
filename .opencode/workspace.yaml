@@ -1,0 +1,19 @@
+repos:
+  - name: stealth-runner
+    url: https://github.com/OpenSIN-AI/stealth-runner
+    role: orchestrator
+  - name: skylight-cli
+    url: https://github.com/SIN-CLIs/skylight-cli
+    role: act-layer
+  - name: unmask-cli
+    url: https://github.com/SIN-CLIs/unmask-cli
+    role: sense-layer
+  - name: playstealth-cli
+    url: https://github.com/SIN-CLIs/playstealth-cli
+    role: hide-layer
+  - name: screen-follow
+    url: https://github.com/SIN-CLIs/screen-follow
+    role: verify-layer
+  - name: stealth-skills
+    url: https://github.com/SIN-CLIs/stealth-skills
+    role: private-skills
