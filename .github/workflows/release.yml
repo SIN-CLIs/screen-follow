@@ -23,6 +23,6 @@ jobs:
           cd .build/release
           tar -czf screen-follow-${{ github.ref_name }}-${{ matrix.arch }}.tar.gz screen-follow
       - name: Upload
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: .build/release/screen-follow-${{ github.ref_name }}-${{ matrix.arch }}.tar.gz
