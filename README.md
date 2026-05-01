@@ -1,5 +1,7 @@
 # screen-follow
 
+[![Graphify](https://img.shields.io/badge/Graphify-Knowledge%20Graph-2ea44f?logo=gitbook&logoColor=white)](graphify-out/graph.html)
+
 > Das visuelle Gedächtnis der Stealth Quad.  
 > Nimmt macOS-Bildschirme inklusive Mausklicks, Tastenanschlägen und Cursor-Spuren auf – für Debugging, QS und Compliance.
 

@@ -1,22 +1,16 @@
-# brain.md — screen-follow v0.2.1
+# brain.md - Systemwissen (2026-05-01)
 
-> **Stealth Quad Verify Layer** — Video + JSONL Audit + Element-Label-Logging
+## screen-follow Kern
+- **Tech:** Swift, ScreenCaptureKit + AVAssetWriter
+- **CLI:** record --video, stop, status, trace --last N
+- **Erzeugt:** MP4-Videodateien + JSONL-Audit-Trail
+- **Rolling Buffer:** 4-Sekunden-Clips für Omni temporal analysis
+- **Integration:** screen-follow record → ffmpeg clip → Omni Conv3D
 
-## Architektur
-- **EventBus** (Combine) — zentraler Publisher
-- **SystemEventTap** — EIN CGEventTap für Maus + Tastatur + Scroll
-- **ScreenRecorder** — ScreenCaptureKit + AVAssetWriter
-- **EventAuditLogger** — JSONL mit elementRole + elementLabel via AXUIElementCopyElementAtPosition
-- **Klic-basiert** — Cursor Trails, Keyboard Overlay, Mouse Effects (MIT)
+## Stealth-Quad
+- VERIFY layer
+- Live-Monitor für Omni Rolling Video Buffer
+- Post-Mortem-Analyse via `runner/video_analyzer.py`
 
-## CLI
-```
-screen-follow              → GUI (Live-Overlays + Audit)
-screen-follow record --video → Video + JSONL
-screen-follow status        → Recording-Status
-screen-follow trace --last 50 → Audit-Events
-screen-follow stop          → Aufnahme beenden
-```
-
-## Integration in stealth-runner
-`learn_from_session()` in `stealth-runner/src/stealth_runner/learn.py` liest den Audit-Log und generiert Skills.
+## Graphify
+- 252 nodes, 17 communities
