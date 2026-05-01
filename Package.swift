@@ -12,5 +12,10 @@ let package = Package(
             name: "ScreenFollow",
             path: "Sources/ScreenFollow"
         ),
+        .testTarget(
+            name: "ScreenFollowTests",
+            dependencies: ["ScreenFollow"],
+            path: "Tests/ScreenFollowTests"
+        ),
     ]
 )
