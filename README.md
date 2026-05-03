@@ -1,5 +1,6 @@
 # screen-follow
 
+[![CI](https://github.com/SIN-CLIs/screen-follow/actions/workflows/ci.yml/badge.svg)](https://github.com/SIN-CLIs/screen-follow/actions/workflows/ci.yml)
 [![Graphify](https://img.shields.io/badge/Graphify-Knowledge%20Graph-2ea44f?logo=gitbook&logoColor=white)](graphify-out/graph.html)
 
 > Das visuelle Gedächtnis der Stealth Quad.  
