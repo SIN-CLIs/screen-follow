@@ -41,4 +41,39 @@ final class EventBusTests: XCTestCase {
         XCTAssertEqual(FollowEvent.keyDown(keyCode: 0, characters: "").auditType, "key_down")
         XCTAssertEqual(FollowEvent.scroll(deltaX: 0, deltaY: -300).auditType, "scroll")
     }
+
+    func test_bus_publishes_scroll_event() {
+        let bus = EventBus()
+        let expectation = expectation(description: "scroll event received")
+        bus.publisher
+            .sink { event in
+                if case .scroll = event { expectation.fulfill() }
+            }
+            .store(in: &cancellables)
+        bus.post(.scroll(deltaX: 0, deltaY: -100))
+        wait(for: [expectation], timeout: 1.0)
+    }
+
+    func test_bus_publishes_element_focus() {
+        let bus = EventBus()
+        let expectation = expectation(description: "elementFocus event received")
+        bus.publisher
+            .sink { event in
+                if case .elementFocused = event { expectation.fulfill() }
+            }
+            .store(in: &cancellables)
+        let info = ElementInfo(role: "AXTextField", label: "Email", path: "dialog/textfield")
+        bus.post(.elementFocused(element: info))
+        wait(for: [expectation], timeout: 1.0)
+    }
+
+    func test_bus_multiple_subscribers() {
+        let bus = EventBus()
+        var count = 0
+        let sub1 = bus.publisher.sink { _ in count += 1 }
+        let sub2 = bus.publisher.sink { _ in count += 1 }
+        bus.post(.mouseMoved(x: 50, y: 60))
+        _ = sub1; _ = sub2
+        XCTAssertEqual(count, 2)
+    }
 }
