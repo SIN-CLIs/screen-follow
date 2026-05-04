@@ -23,5 +23,5 @@
 - CPU < 10 % auf Apple Silicon  
 - Overlays ohne spürbare Verzögerung
 
-## Erfolg in der Stealth Quad
+## Erfolg in der Stealth Suite
 `screen-follow` hat seinen Zweck erfüllt, wenn keine Automatisierungs-Session mehr ohne die Frage „Haben wir ein Video davon?" läuft.

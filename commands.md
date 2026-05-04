@@ -88,7 +88,7 @@ for line in sys.stdin:
 "
 ```
 
-## Integration mit Stealth-Quad
+## Integration mit Stealth Suite
 
 ```bash
 # 1. playstealth startet Chrome

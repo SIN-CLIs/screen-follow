@@ -9,7 +9,7 @@
       "source_file": "Package.swift",
       "source_location": "L1",
       "id": "package_swift",
-      "community": 15,
+      "community": 16,
       "norm_label": "package.swift"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
       "source_location": "L1",
       "id": "tests_screenfollowtests_screenfollowtests_swift",
-      "community": 6,
+      "community": 0,
       "norm_label": "screenfollowtests.swift"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
       "source_location": "L5",
       "id": "screenfollowtests_screenfollowtests_eventbustests",
-      "community": 6,
+      "community": 0,
       "norm_label": "eventbustests"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "",
       "source_location": "",
       "id": "xctestcase",
-      "community": 8,
+      "community": 0,
       "norm_label": "xctestcase"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
       "source_location": "L8",
       "id": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_mouse_event",
-      "community": 6,
+      "community": 0,
       "norm_label": ".test_bus_publishes_mouse_event()"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
       "source_location": "L24",
       "id": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_key_event",
-      "community": 6,
+      "community": 0,
       "norm_label": ".test_bus_publishes_key_event()"
     },
     {
@@ -63,8 +63,35 @@
       "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
       "source_location": "L38",
       "id": "screenfollowtests_screenfollowtests_eventbustests_test_audit_type_strings",
-      "community": 6,
+      "community": 0,
       "norm_label": ".test_audit_type_strings()"
+    },
+    {
+      "label": ".test_bus_publishes_scroll_event()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L45",
+      "id": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_scroll_event",
+      "community": 0,
+      "norm_label": ".test_bus_publishes_scroll_event()"
+    },
+    {
+      "label": ".test_bus_publishes_element_focus()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L57",
+      "id": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "community": 0,
+      "norm_label": ".test_bus_publishes_element_focus()"
+    },
+    {
+      "label": ".test_bus_multiple_subscribers()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L70",
+      "id": "screenfollowtests_screenfollowtests_eventbustests_test_bus_multiple_subscribers",
+      "community": 0,
+      "norm_label": ".test_bus_multiple_subscribers()"
     },
     {
       "label": "ConfigurationTests.swift",
@@ -72,7 +99,7 @@
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
       "source_location": "L1",
       "id": "tests_screenfollowtests_configurationtests_swift",
-      "community": 8,
+      "community": 11,
       "norm_label": "configurationtests.swift"
     },
     {
@@ -81,7 +108,7 @@
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
       "source_location": "L4",
       "id": "screenfollowtests_configurationtests_configurationtests",
-      "community": 8,
+      "community": 11,
       "norm_label": "configurationtests"
     },
     {
@@ -90,7 +117,7 @@
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
       "source_location": "L5",
       "id": "screenfollowtests_configurationtests_configurationtests_test_default_output_directory",
-      "community": 8,
+      "community": 11,
       "norm_label": ".test_default_output_directory()"
     },
     {
@@ -99,8 +126,53 @@
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
       "source_location": "L6",
       "id": "screenfollowtests_configurationtests_configurationtests_test_default_frame_rate",
-      "community": 8,
+      "community": 11,
       "norm_label": ".test_default_frame_rate()"
+    },
+    {
+      "label": ".test_default_video_codec()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L7",
+      "id": "screenfollowtests_configurationtests_configurationtests_test_default_video_codec",
+      "community": 11,
+      "norm_label": ".test_default_video_codec()"
+    },
+    {
+      "label": ".test_default_recording_quality()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L8",
+      "id": "screenfollowtests_configurationtests_configurationtests_test_default_recording_quality",
+      "community": 11,
+      "norm_label": ".test_default_recording_quality()"
+    },
+    {
+      "label": ".test_custom_output_directory()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L9",
+      "id": "screenfollowtests_configurationtests_configurationtests_test_custom_output_directory",
+      "community": 11,
+      "norm_label": ".test_custom_output_directory()"
+    },
+    {
+      "label": ".test_custom_frame_rate()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L10",
+      "id": "screenfollowtests_configurationtests_configurationtests_test_custom_frame_rate",
+      "community": 11,
+      "norm_label": ".test_custom_frame_rate()"
+    },
+    {
+      "label": ".test_custom_quality_low()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L11",
+      "id": "screenfollowtests_configurationtests_configurationtests_test_custom_quality_low",
+      "community": 11,
+      "norm_label": ".test_custom_quality_low()"
     },
     {
       "label": "FollowEventTests.swift",
@@ -108,7 +180,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L1",
       "id": "tests_screenfollowtests_followeventtests_swift",
-      "community": 8,
+      "community": 0,
       "norm_label": "followeventtests.swift"
     },
     {
@@ -117,7 +189,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L4",
       "id": "screenfollowtests_followeventtests_followeventtests",
-      "community": 8,
+      "community": 0,
       "norm_label": "followeventtests"
     },
     {
@@ -126,7 +198,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L5",
       "id": "screenfollowtests_followeventtests_followeventtests_test_mousedown_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_mousedown_audittype()"
     },
     {
@@ -135,7 +207,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L6",
       "id": "screenfollowtests_followeventtests_followeventtests_test_mouseup_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_mouseup_audittype()"
     },
     {
@@ -144,7 +216,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L7",
       "id": "screenfollowtests_followeventtests_followeventtests_test_mousemoved_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_mousemoved_audittype()"
     },
     {
@@ -153,7 +225,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L8",
       "id": "screenfollowtests_followeventtests_followeventtests_test_keydown_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_keydown_audittype()"
     },
     {
@@ -162,7 +234,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L9",
       "id": "screenfollowtests_followeventtests_followeventtests_test_keyup_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_keyup_audittype()"
     },
     {
@@ -171,7 +243,7 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L10",
       "id": "screenfollowtests_followeventtests_followeventtests_test_scroll_audittype",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_scroll_audittype()"
     },
     {
@@ -180,8 +252,44 @@
       "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
       "source_location": "L11",
       "id": "screenfollowtests_followeventtests_followeventtests_test_enum_equality",
-      "community": 8,
+      "community": 0,
       "norm_label": ".test_enum_equality()"
+    },
+    {
+      "label": ".test_mouseDown_coordinates()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L16",
+      "id": "screenfollowtests_followeventtests_followeventtests_test_mousedown_coordinates",
+      "community": 0,
+      "norm_label": ".test_mousedown_coordinates()"
+    },
+    {
+      "label": ".test_keyDown_with_characters()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L17",
+      "id": "screenfollowtests_followeventtests_followeventtests_test_keydown_with_characters",
+      "community": 0,
+      "norm_label": ".test_keydown_with_characters()"
+    },
+    {
+      "label": ".test_scroll_negative_deltaY()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L18",
+      "id": "screenfollowtests_followeventtests_followeventtests_test_scroll_negative_deltay",
+      "community": 0,
+      "norm_label": ".test_scroll_negative_deltay()"
+    },
+    {
+      "label": ".test_element_focused_auditType()",
+      "file_type": "code",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L19",
+      "id": "screenfollowtests_followeventtests_followeventtests_test_element_focused_audittype",
+      "community": 0,
+      "norm_label": ".test_element_focused_audittype()"
     },
     {
       "label": "KlicApp.swift",
@@ -207,7 +315,7 @@
       "source_file": "",
       "source_location": "",
       "id": "nsobject",
-      "community": 7,
+      "community": 5,
       "norm_label": "nsobject"
     },
     {
@@ -270,7 +378,7 @@
       "source_file": "Sources/ScreenFollow/KlicApp.swift",
       "source_location": "L228",
       "id": "screenfollow_klicapp_appdelegate_showabout",
-      "community": 1,
+      "community": 3,
       "norm_label": ".showabout()"
     },
     {
@@ -405,7 +513,7 @@
       "source_file": "Sources/ScreenFollow/main.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_main_swift",
-      "community": 16,
+      "community": 17,
       "norm_label": "main.swift"
     },
     {
@@ -414,7 +522,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_monitors_mousemonitor_swift",
-      "community": 7,
+      "community": 12,
       "norm_label": "mousemonitor.swift"
     },
     {
@@ -423,7 +531,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L5",
       "id": "monitors_mousemonitor_mousemonitor",
-      "community": 7,
+      "community": 12,
       "norm_label": "mousemonitor"
     },
     {
@@ -432,7 +540,7 @@
       "source_file": "",
       "source_location": "",
       "id": "observableobject",
-      "community": 7,
+      "community": 5,
       "norm_label": "observableobject"
     },
     {
@@ -441,7 +549,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L28",
       "id": "monitors_mousemonitor_mousemonitor_init",
-      "community": 7,
+      "community": 12,
       "norm_label": ".init()"
     },
     {
@@ -450,7 +558,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L33",
       "id": "monitors_mousemonitor_mousemonitor_setupeventfiltering",
-      "community": 7,
+      "community": 12,
       "norm_label": ".setupeventfiltering()"
     },
     {
@@ -459,7 +567,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L56",
       "id": "monitors_mousemonitor_mousemonitor_startmonitoring",
-      "community": 7,
+      "community": 12,
       "norm_label": ".startmonitoring()"
     },
     {
@@ -468,7 +576,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L117",
       "id": "monitors_mousemonitor_mousemonitor_stopmonitoring",
-      "community": 7,
+      "community": 12,
       "norm_label": ".stopmonitoring()"
     },
     {
@@ -477,7 +585,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/MouseMonitor.swift",
       "source_location": "L135",
       "id": "monitors_mousemonitor_mousemonitor_handlemouseevent",
-      "community": 7,
+      "community": 12,
       "norm_label": ".handlemouseevent()"
     },
     {
@@ -486,7 +594,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_monitors_keyboardmonitor_swift",
-      "community": 9,
+      "community": 7,
       "norm_label": "keyboardmonitor.swift"
     },
     {
@@ -495,7 +603,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L5",
       "id": "monitors_keyboardmonitor_keyboardmonitor",
-      "community": 9,
+      "community": 7,
       "norm_label": "keyboardmonitor"
     },
     {
@@ -504,7 +612,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L45",
       "id": "monitors_keyboardmonitor_keyboardmonitor_init",
-      "community": 9,
+      "community": 7,
       "norm_label": ".init()"
     },
     {
@@ -513,7 +621,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L49",
       "id": "monitors_keyboardmonitor_keyboardmonitor_deinit",
-      "community": 9,
+      "community": 7,
       "norm_label": ".deinit()"
     },
     {
@@ -522,7 +630,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L53",
       "id": "monitors_keyboardmonitor_keyboardmonitor_setupsubscription",
-      "community": 9,
+      "community": 7,
       "norm_label": ".setupsubscription()"
     },
     {
@@ -531,7 +639,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L115",
       "id": "monitors_keyboardmonitor_keyboardmonitor_createeventtap",
-      "community": 9,
+      "community": 7,
       "norm_label": ".createeventtap()"
     },
     {
@@ -540,7 +648,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L146",
       "id": "monitors_keyboardmonitor_keyboardmonitor_startmonitoring",
-      "community": 9,
+      "community": 7,
       "norm_label": ".startmonitoring()"
     },
     {
@@ -549,7 +657,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L171",
       "id": "monitors_keyboardmonitor_keyboardmonitor_stopmonitoring",
-      "community": 9,
+      "community": 7,
       "norm_label": ".stopmonitoring()"
     },
     {
@@ -558,7 +666,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L189",
       "id": "monitors_keyboardmonitor_keyboardmonitor_handlecgevent",
-      "community": 9,
+      "community": 7,
       "norm_label": ".handlecgevent()"
     },
     {
@@ -567,7 +675,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L259",
       "id": "monitors_keyboardmonitor_keyboardmonitor_isduplicateevent",
-      "community": 9,
+      "community": 7,
       "norm_label": ".isduplicateevent()"
     },
     {
@@ -576,7 +684,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L280",
       "id": "monitors_keyboardmonitor_keyboardmonitor_addtorecentevents",
-      "community": 9,
+      "community": 7,
       "norm_label": ".addtorecentevents()"
     },
     {
@@ -585,7 +693,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L289",
       "id": "monitors_keyboardmonitor_keyboardmonitor_keycodetostring",
-      "community": 9,
+      "community": 7,
       "norm_label": ".keycodetostring()"
     },
     {
@@ -594,7 +702,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L294",
       "id": "monitors_keyboardmonitor_keyboardmonitor_ismodifierkey",
-      "community": 9,
+      "community": 7,
       "norm_label": ".ismodifierkey()"
     },
     {
@@ -603,7 +711,7 @@
       "source_file": "Sources/ScreenFollow/Monitors/KeyboardMonitor.swift",
       "source_location": "L304",
       "id": "monitors_keyboardmonitor_keyboardmonitor_flagformodifier",
-      "community": 9,
+      "community": 7,
       "norm_label": ".flagformodifier()"
     },
     {
@@ -612,7 +720,7 @@
       "source_file": "Sources/ScreenFollow/Recording/RecordingManager.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_recording_recordingmanager_swift",
-      "community": 4,
+      "community": 9,
       "norm_label": "recordingmanager.swift"
     },
     {
@@ -621,7 +729,7 @@
       "source_file": "Sources/ScreenFollow/Recording/RecordingManager.swift",
       "source_location": "L3",
       "id": "recording_recordingmanager_recordingmanager",
-      "community": 4,
+      "community": 9,
       "norm_label": "recordingmanager"
     },
     {
@@ -630,7 +738,7 @@
       "source_file": "Sources/ScreenFollow/Recording/RecordingManager.swift",
       "source_location": "L10",
       "id": "recording_recordingmanager_recordingmanager_markrecordingstarted",
-      "community": 4,
+      "community": 9,
       "norm_label": ".markrecordingstarted()"
     },
     {
@@ -639,7 +747,7 @@
       "source_file": "Sources/ScreenFollow/Recording/RecordingManager.swift",
       "source_location": "L14",
       "id": "recording_recordingmanager_recordingmanager_markrecordingstopped",
-      "community": 4,
+      "community": 9,
       "norm_label": ".markrecordingstopped()"
     },
     {
@@ -648,7 +756,7 @@
       "source_file": "Sources/ScreenFollow/Recording/RecordingManager.swift",
       "source_location": "L17",
       "id": "recording_recordingmanager_recordingmanager_getrecordingpid",
-      "community": 4,
+      "community": 9,
       "norm_label": ".getrecordingpid()"
     },
     {
@@ -657,7 +765,7 @@
       "source_file": "Sources/ScreenFollow/Recording/ScreenRecorder.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_recording_screenrecorder_swift",
-      "community": 7,
+      "community": 5,
       "norm_label": "screenrecorder.swift"
     },
     {
@@ -666,7 +774,7 @@
       "source_file": "Sources/ScreenFollow/Recording/ScreenRecorder.swift",
       "source_location": "L4",
       "id": "recording_screenrecorder_screenrecorder",
-      "community": 7,
+      "community": 5,
       "norm_label": "screenrecorder"
     },
     {
@@ -675,7 +783,7 @@
       "source_file": "",
       "source_location": "",
       "id": "scstreamdelegate",
-      "community": 7,
+      "community": 5,
       "norm_label": "scstreamdelegate"
     },
     {
@@ -684,7 +792,7 @@
       "source_file": "",
       "source_location": "",
       "id": "scstreamoutput",
-      "community": 7,
+      "community": 5,
       "norm_label": "scstreamoutput"
     },
     {
@@ -693,7 +801,7 @@
       "source_file": "Sources/ScreenFollow/Recording/ScreenRecorder.swift",
       "source_location": "L12",
       "id": "recording_screenrecorder_screenrecorder_startrecording",
-      "community": 7,
+      "community": 5,
       "norm_label": ".startrecording()"
     },
     {
@@ -702,7 +810,7 @@
       "source_file": "Sources/ScreenFollow/Recording/ScreenRecorder.swift",
       "source_location": "L38",
       "id": "recording_screenrecorder_screenrecorder_stoprecording",
-      "community": 7,
+      "community": 5,
       "norm_label": ".stoprecording()"
     },
     {
@@ -711,7 +819,7 @@
       "source_file": "Sources/ScreenFollow/Recording/ScreenRecorder.swift",
       "source_location": "L47",
       "id": "recording_screenrecorder_screenrecorder_stream",
-      "community": 7,
+      "community": 5,
       "norm_label": ".stream()"
     },
     {
@@ -720,7 +828,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_bus_followevent_swift",
-      "community": 6,
+      "community": 0,
       "norm_label": "followevent.swift"
     },
     {
@@ -729,7 +837,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L3",
       "id": "bus_followevent_elementinfo",
-      "community": 6,
+      "community": 0,
       "norm_label": "elementinfo"
     },
     {
@@ -738,7 +846,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L9",
       "id": "bus_followevent_followevent",
-      "community": 6,
+      "community": 0,
       "norm_label": "followevent"
     },
     {
@@ -747,7 +855,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L10",
       "id": "bus_followevent_followevent_mousemoved",
-      "community": 6,
+      "community": 0,
       "norm_label": "mousemoved"
     },
     {
@@ -756,7 +864,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L11",
       "id": "bus_followevent_followevent_mousedown",
-      "community": 6,
+      "community": 0,
       "norm_label": "mousedown"
     },
     {
@@ -765,7 +873,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L12",
       "id": "bus_followevent_followevent_mouseup",
-      "community": 6,
+      "community": 0,
       "norm_label": "mouseup"
     },
     {
@@ -774,7 +882,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L13",
       "id": "bus_followevent_followevent_keydown",
-      "community": 6,
+      "community": 0,
       "norm_label": "keydown"
     },
     {
@@ -783,7 +891,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L14",
       "id": "bus_followevent_followevent_keyup",
-      "community": 6,
+      "community": 0,
       "norm_label": "keyup"
     },
     {
@@ -792,7 +900,7 @@
       "source_file": "Sources/ScreenFollow/Bus/FollowEvent.swift",
       "source_location": "L15",
       "id": "bus_followevent_followevent_scroll",
-      "community": 6,
+      "community": 0,
       "norm_label": "scroll"
     },
     {
@@ -801,7 +909,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_bus_systemeventtap_swift",
-      "community": 4,
+      "community": 9,
       "norm_label": "systemeventtap.swift"
     },
     {
@@ -810,7 +918,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L4",
       "id": "bus_systemeventtap_systemeventtap",
-      "community": 4,
+      "community": 9,
       "norm_label": "systemeventtap"
     },
     {
@@ -819,7 +927,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L10",
       "id": "bus_systemeventtap_systemeventtap_start",
-      "community": 4,
+      "community": 9,
       "norm_label": ".start()"
     },
     {
@@ -828,7 +936,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L38",
       "id": "bus_systemeventtap_systemeventtap_stop",
-      "community": 4,
+      "community": 9,
       "norm_label": ".stop()"
     },
     {
@@ -837,7 +945,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L45",
       "id": "bus_systemeventtap_systemeventtap_elementat",
-      "community": 4,
+      "community": 9,
       "norm_label": ".elementat()"
     },
     {
@@ -846,7 +954,7 @@
       "source_file": "Sources/ScreenFollow/Bus/SystemEventTap.swift",
       "source_location": "L58",
       "id": "bus_systemeventtap_systemeventtap_handle",
-      "community": 4,
+      "community": 9,
       "norm_label": ".handle()"
     },
     {
@@ -855,7 +963,7 @@
       "source_file": "Sources/ScreenFollow/Bus/EventBus.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_bus_eventbus_swift",
-      "community": 6,
+      "community": 0,
       "norm_label": "eventbus.swift"
     },
     {
@@ -864,7 +972,7 @@
       "source_file": "Sources/ScreenFollow/Bus/EventBus.swift",
       "source_location": "L3",
       "id": "bus_eventbus_eventbus",
-      "community": 6,
+      "community": 0,
       "norm_label": "eventbus"
     },
     {
@@ -873,7 +981,7 @@
       "source_file": "Sources/ScreenFollow/Bus/EventBus.swift",
       "source_location": "L7",
       "id": "bus_eventbus_eventbus_post",
-      "community": 6,
+      "community": 0,
       "norm_label": ".post()"
     },
     {
@@ -882,7 +990,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_models_inputevent_swift",
-      "community": 0,
+      "community": 2,
       "norm_label": "inputevent.swift"
     },
     {
@@ -891,7 +999,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L5",
       "id": "models_inputevent_inputeventtype",
-      "community": 0,
+      "community": 2,
       "norm_label": "inputeventtype"
     },
     {
@@ -900,7 +1008,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L6",
       "id": "models_inputevent_inputeventtype_keydown",
-      "community": 0,
+      "community": 2,
       "norm_label": "keydown"
     },
     {
@@ -909,7 +1017,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L7",
       "id": "models_inputevent_inputeventtype_keyup",
-      "community": 0,
+      "community": 2,
       "norm_label": "keyup"
     },
     {
@@ -918,7 +1026,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L8",
       "id": "models_inputevent_inputeventtype_mousemove",
-      "community": 0,
+      "community": 2,
       "norm_label": "mousemove"
     },
     {
@@ -927,7 +1035,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L9",
       "id": "models_inputevent_inputeventtype_mousedown",
-      "community": 0,
+      "community": 2,
       "norm_label": "mousedown"
     },
     {
@@ -936,7 +1044,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L10",
       "id": "models_inputevent_inputeventtype_mouseup",
-      "community": 0,
+      "community": 2,
       "norm_label": "mouseup"
     },
     {
@@ -945,7 +1053,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L11",
       "id": "models_inputevent_inputeventtype_mousescroll",
-      "community": 0,
+      "community": 2,
       "norm_label": "mousescroll"
     },
     {
@@ -954,7 +1062,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L15",
       "id": "models_inputevent_mousebutton",
-      "community": 5,
+      "community": 2,
       "norm_label": "mousebutton"
     },
     {
@@ -972,7 +1080,7 @@
       "source_file": "",
       "source_location": "",
       "id": "equatable",
-      "community": 5,
+      "community": 2,
       "norm_label": "equatable"
     },
     {
@@ -981,7 +1089,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L16",
       "id": "models_inputevent_mousebutton_left",
-      "community": 5,
+      "community": 2,
       "norm_label": "left"
     },
     {
@@ -990,7 +1098,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L17",
       "id": "models_inputevent_mousebutton_right",
-      "community": 5,
+      "community": 2,
       "norm_label": "right"
     },
     {
@@ -999,7 +1107,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L18",
       "id": "models_inputevent_mousebutton_middle",
-      "community": 5,
+      "community": 2,
       "norm_label": "middle"
     },
     {
@@ -1008,7 +1116,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L19",
       "id": "models_inputevent_mousebutton_extra1",
-      "community": 5,
+      "community": 2,
       "norm_label": "extra1"
     },
     {
@@ -1017,7 +1125,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L20",
       "id": "models_inputevent_mousebutton_extra2",
-      "community": 5,
+      "community": 2,
       "norm_label": "extra2"
     },
     {
@@ -1026,7 +1134,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L21",
       "id": "models_inputevent_mousebutton_other",
-      "community": 5,
+      "community": 2,
       "norm_label": "other"
     },
     {
@@ -1035,7 +1143,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L25",
       "id": "models_inputevent_mouseevent",
-      "community": 0,
+      "community": 2,
       "norm_label": "mouseevent"
     },
     {
@@ -1044,7 +1152,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L33",
       "id": "models_inputevent_mouseevent_init",
-      "community": 0,
+      "community": 2,
       "norm_label": ".init()"
     },
     {
@@ -1053,7 +1161,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L44",
       "id": "models_inputevent_keyboardevent",
-      "community": 5,
+      "community": 2,
       "norm_label": "keyboardevent"
     },
     {
@@ -1062,7 +1170,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L58",
       "id": "models_inputevent_inputevent",
-      "community": 0,
+      "community": 2,
       "norm_label": "inputevent"
     },
     {
@@ -1071,7 +1179,7 @@
       "source_file": "",
       "source_location": "",
       "id": "identifiable",
-      "community": 0,
+      "community": 2,
       "norm_label": "identifiable"
     },
     {
@@ -1080,7 +1188,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L67",
       "id": "models_inputevent_eventtype",
-      "community": 0,
+      "community": 2,
       "norm_label": "eventtype"
     },
     {
@@ -1089,7 +1197,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L68",
       "id": "models_inputevent_eventtype_keyboard",
-      "community": 0,
+      "community": 2,
       "norm_label": "keyboard"
     },
     {
@@ -1098,7 +1206,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L69",
       "id": "models_inputevent_eventtype_mouse",
-      "community": 0,
+      "community": 2,
       "norm_label": "mouse"
     },
     {
@@ -1107,7 +1215,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L73",
       "id": "models_inputevent_inputevent_keyboardevent",
-      "community": 2,
+      "community": 4,
       "norm_label": ".keyboardevent()"
     },
     {
@@ -1116,7 +1224,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L84",
       "id": "models_inputevent_inputevent_mouseevent",
-      "community": 7,
+      "community": 12,
       "norm_label": ".mouseevent()"
     },
     {
@@ -1125,7 +1233,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L97",
       "id": "models_inputevent_keymodifier",
-      "community": 0,
+      "community": 6,
       "norm_label": "keymodifier"
     },
     {
@@ -1134,7 +1242,7 @@
       "source_file": "",
       "source_location": "",
       "id": "caseiterable",
-      "community": 0,
+      "community": 6,
       "norm_label": "caseiterable"
     },
     {
@@ -1143,7 +1251,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L98",
       "id": "models_inputevent_keymodifier_shift",
-      "community": 0,
+      "community": 6,
       "norm_label": "shift"
     },
     {
@@ -1152,7 +1260,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L99",
       "id": "models_inputevent_keymodifier_control",
-      "community": 0,
+      "community": 6,
       "norm_label": "control"
     },
     {
@@ -1161,7 +1269,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L100",
       "id": "models_inputevent_keymodifier_option",
-      "community": 0,
+      "community": 6,
       "norm_label": "option"
     },
     {
@@ -1170,7 +1278,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L101",
       "id": "models_inputevent_keymodifier_command",
-      "community": 0,
+      "community": 6,
       "norm_label": "command"
     },
     {
@@ -1179,7 +1287,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L102",
       "id": "models_inputevent_keymodifier_function",
-      "community": 0,
+      "community": 6,
       "norm_label": "function"
     },
     {
@@ -1188,7 +1296,7 @@
       "source_file": "Sources/ScreenFollow/Models/InputEvent.swift",
       "source_location": "L103",
       "id": "models_inputevent_keymodifier_capslock",
-      "community": 0,
+      "community": 6,
       "norm_label": "capslock"
     },
     {
@@ -1197,7 +1305,7 @@
       "source_file": "Sources/ScreenFollow/CLI/CLIStatusReporter.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_cli_clistatusreporter_swift",
-      "community": 13,
+      "community": 14,
       "norm_label": "clistatusreporter.swift"
     },
     {
@@ -1206,7 +1314,7 @@
       "source_file": "Sources/ScreenFollow/CLI/CLIStatusReporter.swift",
       "source_location": "L3",
       "id": "cli_clistatusreporter_screenrecorderdelegate",
-      "community": 13,
+      "community": 14,
       "norm_label": "screenrecorderdelegate"
     },
     {
@@ -1215,7 +1323,7 @@
       "source_file": "",
       "source_location": "",
       "id": "anyobject",
-      "community": 13,
+      "community": 14,
       "norm_label": "anyobject"
     },
     {
@@ -1224,7 +1332,7 @@
       "source_file": "Sources/ScreenFollow/CLI/CLIStatusReporter.swift",
       "source_location": "L8",
       "id": "cli_clistatusreporter_clistatusreporter",
-      "community": 13,
+      "community": 14,
       "norm_label": "clistatusreporter"
     },
     {
@@ -1233,7 +1341,7 @@
       "source_file": "Sources/ScreenFollow/CLI/CLIStatusReporter.swift",
       "source_location": "L9",
       "id": "cli_clistatusreporter_clistatusreporter_recorderdidstart",
-      "community": 13,
+      "community": 14,
       "norm_label": ".recorderdidstart()"
     },
     {
@@ -1242,7 +1350,7 @@
       "source_file": "Sources/ScreenFollow/CLI/CLIStatusReporter.swift",
       "source_location": "L12",
       "id": "cli_clistatusreporter_clistatusreporter_recorderdidstop",
-      "community": 13,
+      "community": 14,
       "norm_label": ".recorderdidstop()"
     },
     {
@@ -1251,7 +1359,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_utilities_userpreferences_swift",
-      "community": 10,
+      "community": 8,
       "norm_label": "userpreferences.swift"
     },
     {
@@ -1260,7 +1368,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L6",
       "id": "utilities_userpreferences_userpreferences",
-      "community": 10,
+      "community": 8,
       "norm_label": "userpreferences"
     },
     {
@@ -1269,7 +1377,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L21",
       "id": "utilities_userpreferences_userpreferences_getoverlayopacity",
-      "community": 10,
+      "community": 8,
       "norm_label": ".getoverlayopacity()"
     },
     {
@@ -1278,7 +1386,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L27",
       "id": "utilities_userpreferences_userpreferences_setoverlayopacity",
-      "community": 10,
+      "community": 8,
       "norm_label": ".setoverlayopacity()"
     },
     {
@@ -1287,7 +1395,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L34",
       "id": "utilities_userpreferences_userpreferences_getshowkeyboardinput",
-      "community": 10,
+      "community": 8,
       "norm_label": ".getshowkeyboardinput()"
     },
     {
@@ -1296,7 +1404,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L40",
       "id": "utilities_userpreferences_userpreferences_setshowkeyboardinput",
-      "community": 10,
+      "community": 8,
       "norm_label": ".setshowkeyboardinput()"
     },
     {
@@ -1305,7 +1413,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L45",
       "id": "utilities_userpreferences_userpreferences_getshowmouseinput",
-      "community": 10,
+      "community": 8,
       "norm_label": ".getshowmouseinput()"
     },
     {
@@ -1314,7 +1422,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L51",
       "id": "utilities_userpreferences_userpreferences_setshowmouseinput",
-      "community": 10,
+      "community": 8,
       "norm_label": ".setshowmouseinput()"
     },
     {
@@ -1323,7 +1431,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L58",
       "id": "utilities_userpreferences_userpreferences_getautohidedelay",
-      "community": 10,
+      "community": 8,
       "norm_label": ".getautohidedelay()"
     },
     {
@@ -1332,7 +1440,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L64",
       "id": "utilities_userpreferences_userpreferences_setautohidedelay",
-      "community": 10,
+      "community": 8,
       "norm_label": ".setautohidedelay()"
     },
     {
@@ -1341,7 +1449,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L71",
       "id": "utilities_userpreferences_userpreferences_getminimaldisplaymode",
-      "community": 10,
+      "community": 8,
       "norm_label": ".getminimaldisplaymode()"
     },
     {
@@ -1350,7 +1458,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L76",
       "id": "utilities_userpreferences_userpreferences_setminimaldisplaymode",
-      "community": 10,
+      "community": 8,
       "norm_label": ".setminimaldisplaymode()"
     },
     {
@@ -1359,7 +1467,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/UserPreferences.swift",
       "source_location": "L83",
       "id": "utilities_userpreferences_userpreferences_registerdefaults",
-      "community": 10,
+      "community": 8,
       "norm_label": ".registerdefaults()"
     },
     {
@@ -1368,7 +1476,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/NotificationNames.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_utilities_notificationnames_swift",
-      "community": 14,
+      "community": 15,
       "norm_label": "notificationnames.swift"
     },
     {
@@ -1377,7 +1485,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/NotificationNames.swift",
       "source_location": "L3",
       "id": "utilities_notificationnames_notification_name",
-      "community": 14,
+      "community": 15,
       "norm_label": "notification.name"
     },
     {
@@ -1386,7 +1494,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_utilities_logger_swift",
-      "community": 12,
+      "community": 13,
       "norm_label": "logger.swift"
     },
     {
@@ -1395,7 +1503,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L5",
       "id": "utilities_logger_logger",
-      "community": 12,
+      "community": 13,
       "norm_label": "logger"
     },
     {
@@ -1404,7 +1512,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L22",
       "id": "utilities_logger_logger_debug",
-      "community": 12,
+      "community": 13,
       "norm_label": ".debug()"
     },
     {
@@ -1413,7 +1521,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L27",
       "id": "utilities_logger_logger_info",
-      "community": 12,
+      "community": 13,
       "norm_label": ".info()"
     },
     {
@@ -1422,7 +1530,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L32",
       "id": "utilities_logger_logger_warning",
-      "community": 12,
+      "community": 13,
       "norm_label": ".warning()"
     },
     {
@@ -1431,7 +1539,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L37",
       "id": "utilities_logger_logger_error",
-      "community": 12,
+      "community": 13,
       "norm_label": ".error()"
     },
     {
@@ -1440,7 +1548,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L41",
       "id": "utilities_logger_logger_exception",
-      "community": 12,
+      "community": 13,
       "norm_label": ".exception()"
     },
     {
@@ -1449,7 +1557,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/Logger.swift",
       "source_location": "L47",
       "id": "utilities_logger_oslogtype",
-      "community": 12,
+      "community": 13,
       "norm_label": "oslogtype"
     },
     {
@@ -1458,7 +1566,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_utilities_inputmanager_swift",
-      "community": 0,
+      "community": 6,
       "norm_label": "inputmanager.swift"
     },
     {
@@ -1467,7 +1575,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L5",
       "id": "utilities_inputmanager_inputmanager",
-      "community": 2,
+      "community": 4,
       "norm_label": "inputmanager"
     },
     {
@@ -1476,7 +1584,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L41",
       "id": "utilities_inputmanager_inputtype",
-      "community": 0,
+      "community": 6,
       "norm_label": "inputtype"
     },
     {
@@ -1485,7 +1593,7 @@
       "source_file": "",
       "source_location": "",
       "id": "int",
-      "community": 4,
+      "community": 9,
       "norm_label": "int"
     },
     {
@@ -1494,7 +1602,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L42",
       "id": "utilities_inputmanager_inputtype_keyboard",
-      "community": 0,
+      "community": 6,
       "norm_label": "keyboard"
     },
     {
@@ -1503,7 +1611,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L43",
       "id": "utilities_inputmanager_inputtype_mouse",
-      "community": 0,
+      "community": 6,
       "norm_label": "mouse"
     },
     {
@@ -1512,7 +1620,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L49",
       "id": "utilities_inputmanager_inputmanager_init",
-      "community": 2,
+      "community": 4,
       "norm_label": ".init()"
     },
     {
@@ -1521,7 +1629,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L84",
       "id": "utilities_inputmanager_inputmanager_setupsubscriptions",
-      "community": 2,
+      "community": 4,
       "norm_label": ".setupsubscriptions()"
     },
     {
@@ -1530,7 +1638,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L145",
       "id": "utilities_inputmanager_inputmanager_updateactiveinputtypes",
-      "community": 2,
+      "community": 4,
       "norm_label": ".updateactiveinputtypes()"
     },
     {
@@ -1539,7 +1647,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L156",
       "id": "utilities_inputmanager_inputmanager_schedulecleareventtimer",
-      "community": 2,
+      "community": 4,
       "norm_label": ".schedulecleareventtimer()"
     },
     {
@@ -1548,7 +1656,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L198",
       "id": "utilities_inputmanager_inputmanager_showoverlay",
-      "community": 2,
+      "community": 4,
       "norm_label": ".showoverlay()"
     },
     {
@@ -1557,7 +1665,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L208",
       "id": "utilities_inputmanager_inputmanager_hideoverlay",
-      "community": 2,
+      "community": 4,
       "norm_label": ".hideoverlay()"
     },
     {
@@ -1566,7 +1674,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L224",
       "id": "utilities_inputmanager_inputmanager_filterrepeatkeyevents",
-      "community": 2,
+      "community": 4,
       "norm_label": ".filterrepeatkeyevents()"
     },
     {
@@ -1575,7 +1683,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L262",
       "id": "utilities_inputmanager_inputmanager_removeduplicateevents",
-      "community": 2,
+      "community": 4,
       "norm_label": ".removeduplicateevents()"
     },
     {
@@ -1584,7 +1692,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L279",
       "id": "utilities_inputmanager_inputmanager_updateallevents",
-      "community": 2,
+      "community": 4,
       "norm_label": ".updateallevents()"
     },
     {
@@ -1593,7 +1701,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L286",
       "id": "utilities_inputmanager_inputmanager_showoverlaymanually",
-      "community": 2,
+      "community": 4,
       "norm_label": ".showoverlaymanually()"
     },
     {
@@ -1602,7 +1710,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L292",
       "id": "utilities_inputmanager_inputmanager_startmonitoring",
-      "community": 2,
+      "community": 4,
       "norm_label": ".startmonitoring()"
     },
     {
@@ -1611,7 +1719,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L299",
       "id": "utilities_inputmanager_inputmanager_stopmonitoring",
-      "community": 2,
+      "community": 4,
       "norm_label": ".stopmonitoring()"
     },
     {
@@ -1620,7 +1728,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L306",
       "id": "utilities_inputmanager_inputmanager_updateopacity",
-      "community": 2,
+      "community": 4,
       "norm_label": ".updateopacity()"
     },
     {
@@ -1629,7 +1737,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L318",
       "id": "utilities_inputmanager_inputmanager_showdemomode",
-      "community": 2,
+      "community": 4,
       "norm_label": ".showdemomode()"
     },
     {
@@ -1638,7 +1746,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L481",
       "id": "utilities_inputmanager_inputmanager_cancelalleventtimers",
-      "community": 2,
+      "community": 4,
       "norm_label": ".cancelalleventtimers()"
     },
     {
@@ -1647,7 +1755,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L494",
       "id": "utilities_inputmanager_inputmanager_setinputtypevisibility",
-      "community": 2,
+      "community": 4,
       "norm_label": ".setinputtypevisibility()"
     },
     {
@@ -1656,7 +1764,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L524",
       "id": "utilities_inputmanager_inputmanager_setautohidedelay",
-      "community": 2,
+      "community": 4,
       "norm_label": ".setautohidedelay()"
     },
     {
@@ -1665,7 +1773,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L529",
       "id": "utilities_inputmanager_inputmanager_checkmonitoringstatus",
-      "community": 2,
+      "community": 4,
       "norm_label": ".checkmonitoringstatus()"
     },
     {
@@ -1674,7 +1782,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L534",
       "id": "utilities_inputmanager_inputmanager_restartmonitoring",
-      "community": 2,
+      "community": 4,
       "norm_label": ".restartmonitoring()"
     },
     {
@@ -1683,7 +1791,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L541",
       "id": "utilities_inputmanager_inputmanager_clearallevents",
-      "community": 2,
+      "community": 4,
       "norm_label": ".clearallevents()"
     },
     {
@@ -1692,7 +1800,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L549",
       "id": "utilities_inputmanager_inputmanager_showdemoinputs",
-      "community": 2,
+      "community": 4,
       "norm_label": ".showdemoinputs()"
     },
     {
@@ -1701,7 +1809,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L555",
       "id": "utilities_inputmanager_inputmanager_showreadydemo",
-      "community": 2,
+      "community": 4,
       "norm_label": ".showreadydemo()"
     },
     {
@@ -1710,7 +1818,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L646",
       "id": "utilities_inputmanager_inputmanager_setopacitypreference",
-      "community": 2,
+      "community": 4,
       "norm_label": ".setopacitypreference()"
     },
     {
@@ -1719,7 +1827,7 @@
       "source_file": "Sources/ScreenFollow/Utilities/InputManager.swift",
       "source_location": "L652",
       "id": "utilities_inputmanager_inputmanager_shouldkeepevent",
-      "community": 2,
+      "community": 4,
       "norm_label": ".shouldkeepevent()"
     },
     {
@@ -1728,7 +1836,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_audit_eventauditlogger_swift",
-      "community": 4,
+      "community": 5,
       "norm_label": "eventauditlogger.swift"
     },
     {
@@ -1737,7 +1845,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L4",
       "id": "audit_eventauditlogger_auditevent",
-      "community": 4,
+      "community": 5,
       "norm_label": "auditevent"
     },
     {
@@ -1746,7 +1854,7 @@
       "source_file": "",
       "source_location": "",
       "id": "codable",
-      "community": 4,
+      "community": 5,
       "norm_label": "codable"
     },
     {
@@ -1755,7 +1863,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L18",
       "id": "audit_eventauditlogger_eventauditlogger",
-      "community": 4,
+      "community": 5,
       "norm_label": "eventauditlogger"
     },
     {
@@ -1764,7 +1872,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L28",
       "id": "audit_eventauditlogger_eventauditlogger_startlogging",
-      "community": 4,
+      "community": 5,
       "norm_label": ".startlogging()"
     },
     {
@@ -1773,7 +1881,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L42",
       "id": "audit_eventauditlogger_eventauditlogger_stoplogging",
-      "community": 4,
+      "community": 5,
       "norm_label": ".stoplogging()"
     },
     {
@@ -1782,7 +1890,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L49",
       "id": "audit_eventauditlogger_eventauditlogger_lastevents",
-      "community": 4,
+      "community": 5,
       "norm_label": ".lastevents()"
     },
     {
@@ -1791,7 +1899,7 @@
       "source_file": "Sources/ScreenFollow/Audit/EventAuditLogger.swift",
       "source_location": "L53",
       "id": "audit_eventauditlogger_eventauditlogger_log",
-      "community": 4,
+      "community": 5,
       "norm_label": ".log()"
     },
     {
@@ -1800,7 +1908,7 @@
       "source_file": "Sources/ScreenFollow/Views/AboutView.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_views_aboutview_swift",
-      "community": 1,
+      "community": 3,
       "norm_label": "aboutview.swift"
     },
     {
@@ -1809,7 +1917,7 @@
       "source_file": "Sources/ScreenFollow/Views/AboutView.swift",
       "source_location": "L3",
       "id": "views_aboutview_aboutview",
-      "community": 1,
+      "community": 3,
       "norm_label": "aboutview"
     },
     {
@@ -1908,7 +2016,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L5",
       "id": "views_mousevisualizer_mouseactiontype",
-      "community": 5,
+      "community": 2,
       "norm_label": "mouseactiontype"
     },
     {
@@ -1917,7 +2025,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L6",
       "id": "views_mousevisualizer_mouseactiontype_click",
-      "community": 5,
+      "community": 2,
       "norm_label": "click"
     },
     {
@@ -1926,7 +2034,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L7",
       "id": "views_mousevisualizer_mouseactiontype_scroll",
-      "community": 5,
+      "community": 2,
       "norm_label": "scroll"
     },
     {
@@ -1935,7 +2043,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L8",
       "id": "views_mousevisualizer_mouseactiontype_momentumscroll",
-      "community": 5,
+      "community": 2,
       "norm_label": "momentumscroll"
     },
     {
@@ -1944,7 +2052,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L9",
       "id": "views_mousevisualizer_mouseactiontype_move",
-      "community": 5,
+      "community": 2,
       "norm_label": "move"
     },
     {
@@ -1953,7 +2061,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L10",
       "id": "views_mousevisualizer_mouseactiontype_none",
-      "community": 5,
+      "community": 2,
       "norm_label": "none"
     },
     {
@@ -1962,7 +2070,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L13",
       "id": "views_mousevisualizer_scrolldirection",
-      "community": 5,
+      "community": 1,
       "norm_label": "scrolldirection"
     },
     {
@@ -1971,7 +2079,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L14",
       "id": "views_mousevisualizer_scrolldirection_up",
-      "community": 5,
+      "community": 1,
       "norm_label": "up"
     },
     {
@@ -1980,7 +2088,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L15",
       "id": "views_mousevisualizer_scrolldirection_down",
-      "community": 5,
+      "community": 1,
       "norm_label": "down"
     },
     {
@@ -1989,7 +2097,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L16",
       "id": "views_mousevisualizer_scrolldirection_left",
-      "community": 5,
+      "community": 1,
       "norm_label": "left"
     },
     {
@@ -1998,7 +2106,7 @@
       "source_file": "Sources/ScreenFollow/Views/MouseVisualizer.swift",
       "source_location": "L17",
       "id": "views_mousevisualizer_scrolldirection_right",
-      "community": 5,
+      "community": 1,
       "norm_label": "right"
     },
     {
@@ -2043,7 +2151,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L1",
       "id": "sources_screenfollow_views_inputoverlayview_swift",
-      "community": 11,
+      "community": 10,
       "norm_label": "inputoverlayview.swift"
     },
     {
@@ -2052,7 +2160,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L4",
       "id": "views_inputoverlayview_mouseeventpassthrough",
-      "community": 11,
+      "community": 10,
       "norm_label": "mouseeventpassthrough"
     },
     {
@@ -2061,7 +2169,7 @@
       "source_file": "",
       "source_location": "",
       "id": "nsviewrepresentable",
-      "community": 11,
+      "community": 10,
       "norm_label": "nsviewrepresentable"
     },
     {
@@ -2070,7 +2178,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L5",
       "id": "views_inputoverlayview_mouseeventpassthrough_makensview",
-      "community": 11,
+      "community": 10,
       "norm_label": ".makensview()"
     },
     {
@@ -2079,7 +2187,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L16",
       "id": "views_inputoverlayview_mouseeventpassthrough_updatensview",
-      "community": 11,
+      "community": 10,
       "norm_label": ".updatensview()"
     },
     {
@@ -2088,7 +2196,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L21",
       "id": "views_inputoverlayview_inputoverlayview",
-      "community": 11,
+      "community": 10,
       "norm_label": "inputoverlayview"
     },
     {
@@ -2097,7 +2205,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L106",
       "id": "views_inputoverlayview_inputoverlayview_createinsertiontransition",
-      "community": 11,
+      "community": 10,
       "norm_label": ".createinsertiontransition()"
     },
     {
@@ -2106,7 +2214,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L114",
       "id": "views_inputoverlayview_blureffectview",
-      "community": 11,
+      "community": 10,
       "norm_label": "blureffectview"
     },
     {
@@ -2115,7 +2223,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L118",
       "id": "views_inputoverlayview_blureffectview_makensview",
-      "community": 11,
+      "community": 10,
       "norm_label": ".makensview()"
     },
     {
@@ -2124,7 +2232,7 @@
       "source_file": "Sources/ScreenFollow/Views/InputOverlayView.swift",
       "source_location": "L135",
       "id": "views_inputoverlayview_blureffectview_updatensview",
-      "community": 11,
+      "community": 10,
       "norm_label": ".updatensview()"
     },
     {
@@ -2151,7 +2259,7 @@
       "source_file": "Sources/ScreenFollow/Views/ConfigurationView.swift",
       "source_location": "L24",
       "id": "views_configurationview_overlaytheme",
-      "community": 0,
+      "community": 6,
       "norm_label": "overlaytheme"
     },
     {
@@ -2160,7 +2268,7 @@
       "source_file": "Sources/ScreenFollow/Views/ConfigurationView.swift",
       "source_location": "L25",
       "id": "views_configurationview_overlaytheme_dark",
-      "community": 0,
+      "community": 6,
       "norm_label": "dark"
     },
     {
@@ -2169,7 +2277,7 @@
       "source_file": "Sources/ScreenFollow/Views/ConfigurationView.swift",
       "source_location": "L26",
       "id": "views_configurationview_overlaytheme_light",
-      "community": 0,
+      "community": 6,
       "norm_label": "light"
     },
     {
@@ -2178,7 +2286,7 @@
       "source_file": "Sources/ScreenFollow/Views/ConfigurationView.swift",
       "source_location": "L27",
       "id": "views_configurationview_overlaytheme_vibrant",
-      "community": 0,
+      "community": 6,
       "norm_label": "vibrant"
     },
     {
@@ -2334,6 +2442,42 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests",
+      "_tgt": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_scroll_event",
+      "source": "screenfollowtests_screenfollowtests_eventbustests",
+      "target": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_scroll_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests",
+      "_tgt": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "source": "screenfollowtests_screenfollowtests_eventbustests",
+      "target": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests",
+      "_tgt": "screenfollowtests_screenfollowtests_eventbustests_test_bus_multiple_subscribers",
+      "source": "screenfollowtests_screenfollowtests_eventbustests",
+      "target": "screenfollowtests_screenfollowtests_eventbustests_test_bus_multiple_subscribers",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
@@ -2394,6 +2538,54 @@
       "target": "bus_eventbus_eventbus"
     },
     {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_scroll_event",
+      "_tgt": "bus_eventbus_eventbus",
+      "source": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_scroll_event",
+      "target": "bus_eventbus_eventbus"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "_tgt": "bus_eventbus_eventbus",
+      "source": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "target": "bus_eventbus_eventbus"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "_tgt": "bus_followevent_elementinfo",
+      "source": "screenfollowtests_screenfollowtests_eventbustests_test_bus_publishes_element_focus",
+      "target": "bus_followevent_elementinfo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Tests/ScreenFollowTests/ScreenFollowTests.swift",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_src": "screenfollowtests_screenfollowtests_eventbustests_test_bus_multiple_subscribers",
+      "_tgt": "bus_eventbus_eventbus",
+      "source": "screenfollowtests_screenfollowtests_eventbustests_test_bus_multiple_subscribers",
+      "target": "bus_eventbus_eventbus"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
@@ -2427,6 +2619,66 @@
       "_tgt": "screenfollowtests_configurationtests_configurationtests_test_default_frame_rate",
       "source": "screenfollowtests_configurationtests_configurationtests",
       "target": "screenfollowtests_configurationtests_configurationtests_test_default_frame_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "screenfollowtests_configurationtests_configurationtests",
+      "_tgt": "screenfollowtests_configurationtests_configurationtests_test_default_video_codec",
+      "source": "screenfollowtests_configurationtests_configurationtests",
+      "target": "screenfollowtests_configurationtests_configurationtests_test_default_video_codec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "screenfollowtests_configurationtests_configurationtests",
+      "_tgt": "screenfollowtests_configurationtests_configurationtests_test_default_recording_quality",
+      "source": "screenfollowtests_configurationtests_configurationtests",
+      "target": "screenfollowtests_configurationtests_configurationtests_test_default_recording_quality",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "screenfollowtests_configurationtests_configurationtests",
+      "_tgt": "screenfollowtests_configurationtests_configurationtests_test_custom_output_directory",
+      "source": "screenfollowtests_configurationtests_configurationtests",
+      "target": "screenfollowtests_configurationtests_configurationtests_test_custom_output_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "screenfollowtests_configurationtests_configurationtests",
+      "_tgt": "screenfollowtests_configurationtests_configurationtests_test_custom_frame_rate",
+      "source": "screenfollowtests_configurationtests_configurationtests",
+      "target": "screenfollowtests_configurationtests_configurationtests_test_custom_frame_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/ConfigurationTests.swift",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "screenfollowtests_configurationtests_configurationtests",
+      "_tgt": "screenfollowtests_configurationtests_configurationtests_test_custom_quality_low",
+      "source": "screenfollowtests_configurationtests_configurationtests",
+      "target": "screenfollowtests_configurationtests_configurationtests_test_custom_quality_low",
       "confidence_score": 1.0
     },
     {
@@ -2524,6 +2776,66 @@
       "source": "screenfollowtests_followeventtests_followeventtests",
       "target": "screenfollowtests_followeventtests_followeventtests_test_enum_equality",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "screenfollowtests_followeventtests_followeventtests",
+      "_tgt": "screenfollowtests_followeventtests_followeventtests_test_mousedown_coordinates",
+      "source": "screenfollowtests_followeventtests_followeventtests",
+      "target": "screenfollowtests_followeventtests_followeventtests_test_mousedown_coordinates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "screenfollowtests_followeventtests_followeventtests",
+      "_tgt": "screenfollowtests_followeventtests_followeventtests_test_keydown_with_characters",
+      "source": "screenfollowtests_followeventtests_followeventtests",
+      "target": "screenfollowtests_followeventtests_followeventtests_test_keydown_with_characters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "screenfollowtests_followeventtests_followeventtests",
+      "_tgt": "screenfollowtests_followeventtests_followeventtests_test_scroll_negative_deltay",
+      "source": "screenfollowtests_followeventtests_followeventtests",
+      "target": "screenfollowtests_followeventtests_followeventtests_test_scroll_negative_deltay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "screenfollowtests_followeventtests_followeventtests",
+      "_tgt": "screenfollowtests_followeventtests_followeventtests_test_element_focused_audittype",
+      "source": "screenfollowtests_followeventtests_followeventtests",
+      "target": "screenfollowtests_followeventtests_followeventtests_test_element_focused_audittype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Tests/ScreenFollowTests/FollowEventTests.swift",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_src": "screenfollowtests_followeventtests_followeventtests_test_element_focused_audittype",
+      "_tgt": "bus_followevent_elementinfo",
+      "source": "screenfollowtests_followeventtests_followeventtests_test_element_focused_audittype",
+      "target": "bus_followevent_elementinfo"
     },
     {
       "relation": "contains",

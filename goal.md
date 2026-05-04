@@ -1,7 +1,7 @@
 # goal.md — screen-follow
 
 ## Mission
-`screen-follow` ist das **visuelle Gedächtnis der Stealth Quad**.  
+`screen-follow` ist das **visuelle Gedächtnis der Stealth Suite**.  
 Es zeichnet lückenlos auf, was der Benutzer oder die Automatisierung (skylight-cli) auf dem Bildschirm tut, und macht jede Aktion später nachvollziehbar.
 
 ### Kernziele

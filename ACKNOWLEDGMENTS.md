@@ -7,7 +7,7 @@
 - [FocusCursor](https://github.com/jaywcjlove/focus-cursor) — UI Inspiration
 
 ## Danke an
-- Stealth Quad Entwickler für Integrationstests
+- Stealth Suite Entwickler für Integrationstests
 - GitHub Contributors
 
 ## Lizenz

@@ -23,8 +23,8 @@ ffmpeg -sseof -4 -i /tmp/omni_session.mp4 -c copy /tmp/omni_clip.mp4
 python3 -m runner.video_analyzer --last flow
 ```
 
-## Stealth-Quad
-- **VERIFY layer** – visuelles Gedächtnis der Stealth Quad
+## Stealth Suite
+- **VERIFY layer** – visuelles Gedächtnis der Stealth Suite
 - Live-Video-Quelle für Omni Rolling Video Buffer
 - Post-Mortem-Analyse via `runner/video_analyzer.py` (stealth-runner)
 
