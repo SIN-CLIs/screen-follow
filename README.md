@@ -3,7 +3,7 @@
 [![CI](https://github.com/SIN-CLIs/screen-follow/actions/workflows/ci.yml/badge.svg)](https://github.com/SIN-CLIs/screen-follow/actions/workflows/ci.yml)
 [![Graphify](https://img.shields.io/badge/Graphify-Knowledge%20Graph-2ea44f?logo=gitbook&logoColor=white)](graphify-out/graph.html)
 
-> Das visuelle Gedächtnis der Stealth Suite.  
+> Das visuelle Gedächtnis der Stealth Suite.
 > Nimmt macOS-Bildschirme inklusive Mausklicks, Tastenanschlägen und Cursor-Spuren auf – für Debugging, QS und Compliance.
 
 ## Installation
@@ -68,6 +68,7 @@ Part of the **SIN-CLIs Stealth Suite** — 17 Komponenten für autonome Browser-
 | 🛡️ GUARDIAN | [stealth-guardian](https://github.com/SIN-CLIs/stealth-guardian) | Python |
 | 🔄 SYNC | [stealth-sync](https://github.com/SIN-CLIs/stealth-sync) | Python |
 | ⚡ SESSION | [stealth-session](https://github.com/SIN-CLIs/stealth-session) | Python |
+| 🎯 DYNAMIC | [stealth-dynamic](https://github.com/SIN-CLIs/stealth-dynamic) | Python |
 | 💀 LEGACY | [skylight-cli](https://github.com/SIN-CLIs/skylight-cli) | Swift |
 | 🔬 SOTA | [stealth-sota](https://github.com/SIN-CLIs/stealth-sota) | Python |
 | 💀 LEGACY | [computer-use-mcp](https://github.com/SIN-CLIs/computer-use-mcp) | TypeScript |
